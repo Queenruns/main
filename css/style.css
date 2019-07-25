@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fffff7;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: darkslategray;
+}
+
+#banner {
+    max-width: 792px;
+    height: auto;
+    margin: 15px auto 15px auto;
+    display: flex;
+}
+
+.center {
+    margin: auto;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 15 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+li a:hover {
+    color: #f2c701;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin: auto;
+    max-width: 900px;
+}
+
+.grid-2nd {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    padding: 20px;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.grid-3th {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    padding: 20px;
+    max-width: 880px;
+    margin: auto;
+}
+
+.grid-4th {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    max-width: 680px;
+    margin: auto;
+}
+
+.grid img {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-4th p {
+    font-size: 80%;
+    margin: 5px;
+}
+
+.item {
+    position: relative;
+    margin: auto;
+}
+
+.block {
+    max-width: 400px;
+    text-align: justify;
+    padding: 20px;
+    font-size: 100%;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about img {
+    max-width: 180px;
+    height: auto;
+}
+
+.line {
+    width: 200px;
+    border-bottom: solid black 1px;
+    margin: 100px auto 0px auto;
+}
+
+#about, #prices, #discord, #staff, #run-for-us {
+    padding-top: 80px;
+}
+
+.line-banner {
+    width: 200px;
+    border-bottom: solid black 1px;
+    margin: 20px auto;
+}
+
+.service, .prices, .discord, .staff, .run-for-us, .footer{
+    text-align: center;
+}
+
+.prices, .discord, .staff, .run-for-us, .footer, .service h2 {
+    font-size: 120%;
+}
+
+.service img {
+    width: auto;
+    height: 100px;
+}
+
+.service h3 {
+    font-size: 90%
+}
+
+.discord p {
+    max-width: 400px;
+    margin: auto;
+}
+
+.discord img {
+    width: 250px;
+    height: auto;
+}
+
+.staff p {
+    padding: 5px;
+    margin: 0;
+    font-size: 100%;
+}
+
+.run-for-us {
+    max-width: 800px;
+    margin: auto;
+}
+
+.run-for-us img {
+    max-width: 100px;
+    height: auto;
+}
+
+.footer {
+    margin-top: 100px;
+    border-top: solid 1px black;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-2nd, .grid-3th {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
